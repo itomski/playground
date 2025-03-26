@@ -14,7 +14,7 @@ public class Aufgabe2 {
     /*
     Schreibe anschließend 4 Methoden für die 4 Grundrechenarten und rufe sie in der main-Methode auf.
 
-    Lese zwei Zahlen von der Konsole ein und führe die Rechenoperationen damit aus.
+    Lese zwei Zahlen von der Konsole ein und führe die Rechenoperationen damit aus...
     Gebe die Ergebnise aus.
      */
 
