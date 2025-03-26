@@ -21,6 +21,13 @@ public class Aufgabe3 {
     Schreibe eine Methode die ein Array von Zahlen entgegennimmt, es auswertet und ausgibt.
     Die Ausgabe soll für das folgende Array [3,5,1,3,2,5]  wie folgt aussehen:
     Wurfergebnis: 1 mal 1, 1 mal 2, 2 mal 3, 0 mal 4, 2 mal 5, 0 mal 6
+
+    Ps: Eine Zufallszahl kann folgendermaßen ermittel werden:
+    int zahl = (int)(Math.random() * 6) + 1;
+
+    oder
+    Random rand = new Random();
+    int zahl = rand.nextInt(6) + 1;
      */
 
 }
