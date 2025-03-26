@@ -1,6 +1,7 @@
 package de.lubowiecki;
 
 import de.lubowiecki.uebungen.Aufgabe1;
+import de.lubowiecki.uebungen.Taschenrechner;
 
 import java.util.Date;
 
@@ -16,5 +17,7 @@ public class Import {
 
         // Alle Klassen aus Package java.lang sind automatisch verfügbar
         System.out.println(Math.PI); // Muss NICHT importiert werden
+
+        System.out.println(Taschenrechner.add(15, 33));
     }
 }
