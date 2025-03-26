@@ -17,4 +17,8 @@ public class Taschenrechner {
     public static double div(double a, double b) {
         return a / b;
     }
+
+    public static void divAndPrint(double a, double b) {
+        System.out.println(a / b);
+    }
 }

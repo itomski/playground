@@ -3,6 +3,9 @@ package de.lubowiecki.uebungen;
 import java.util.Locale;
 import java.util.Scanner;
 
+// Alle statische Eigenschaften und Methoden werden importiert
+import static de.lubowiecki.uebungen.Taschenrechner.*;
+
 public class Aufgabe2 {
 
      /*
@@ -40,16 +43,21 @@ public class Aufgabe2 {
 
 
         // Methode wird ausgeführt und die Rückgabe ausgegeben
-        System.out.println(Taschenrechner.add(v1, v2));
+        System.out.println(add(v1, v2)); // Wegen dem statischen import auch direkt verfügbar
 
         // Methode wird ausgeführt und die Rückgabe in eine Variable gespeichert
-        double erg = Taschenrechner.multi(v1, v2);
+        double erg = multi(v1, v2);
         System.out.println(erg);
 
         System.out.println(Taschenrechner.sub(v1, v2));
 
         erg = Taschenrechner.div(v1, v2);
         System.out.println(erg);
+
+
+        System.out.println(add(100, sub(200, 300)));
+
+        divAndPrint(100, 50); // Liefert void zurück (nichts) aber gibt einen Wert auf der Konsole aus
 
         // erg = add("Hallo", "Welt"); // Error, Werte sind keine doubles
     }
