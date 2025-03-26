@@ -3,7 +3,6 @@ package de.lubowiecki;
 import de.lubowiecki.uebungen.Aufgabe1;
 
 import java.util.Date;
-import java.util.*; // Importiert alle Klassen aus dem Package
 
 public class Import {
 

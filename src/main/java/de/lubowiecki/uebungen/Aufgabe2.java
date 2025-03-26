@@ -9,10 +9,12 @@ public class Aufgabe2 {
 
     Definiere zusätzlich zwei String Variablen (vorname und nachname).
     Gebe anschließen diese variablen verknüpft in einer Zeile aus.
+    */
 
+    /*
     Schreibe anschließend 4 Methoden für die 4 Grundrechenarten und rufe sie in der main-Methode auf.
 
-    Wiederhole die heutigen Inhalte.
+    Lese zwei Zahlen von der Konsole ein und führe die Rechenoperationen damit aus.
      */
 
 }
