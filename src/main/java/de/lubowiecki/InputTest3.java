@@ -22,10 +22,10 @@ public class InputTest3 {
             String input = scanner.next();
 
             if(input.equalsIgnoreCase("info")) {
-                System.out.println("Hier sind die Infos...");
+                info();
             }
             else if(input.equalsIgnoreCase("help")) {
-                System.out.println("Hier kommt die Hilfe.");
+                help();
             }
             else if(input.equalsIgnoreCase("exit")) {
                 System.out.println("Programm wird verlassen.");
@@ -35,5 +35,21 @@ public class InputTest3 {
                 System.out.println("Falsche Eingabe.");
             }
         }
+    }
+
+    /**
+     * Liefert irgendwelche Infos
+     */
+    public static void info() {
+        System.out.println("Hier sind die Infos...");
+        //...
+    }
+
+    /**
+     * Liefert Hilfe für die Steuerung des Programms
+     */
+    public static void help() {
+        System.out.println("Hier kommt die Hilfe.");
+        //...
     }
 }
