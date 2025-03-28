@@ -27,5 +27,6 @@ public class App {
         while(Spiel.pilzSuchen(x, y));
 
         System.out.println("Spiel ist beendet.");
+
     }
 }
