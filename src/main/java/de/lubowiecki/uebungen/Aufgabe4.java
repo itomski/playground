@@ -1,6 +1,6 @@
 package de.lubowiecki.uebungen;
 
-public class Augabe4 {
+public class Aufgabe4 {
 
     /*
     Schreibe ein Programm, dass das Spiel Pilzsuche realisiert.
