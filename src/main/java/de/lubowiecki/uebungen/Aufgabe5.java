@@ -1,5 +1,7 @@
 package de.lubowiecki.uebungen;
 
+import de.lubowiecki.uebungen.kursverwaltung.Dozent;
+
 public class Aufgabe5 {
 
     /* Schreibe 3 Klassen, die später die Daten einer Kursverwaltung repräsentieren werden
@@ -9,7 +11,23 @@ public class Aufgabe5 {
     Deklariere auch passende Konstruktoren.
 
     Instanziere jede der Klasse 3 mal und schaue dir die Daten im Debugger an.
-     */
+    */
 
+    public static void main(String[] args) {
+
+        final Dozent d1 = new Dozent("Peter", "Parker");
+        Dozent d2 = new Dozent("Carol", "Danvers");
+        Dozent d3 = new Dozent("Scott", "Lang");
+
+        d2 = new Dozent("Natasha", "Romanov");
+        //d1 = new Dozent("Tony", "Stark"); // Error: d1 ist final
+        d1.setVorname("Peter");
+
+        // Lokale Variablen bekommen keine Access-Modifikatoren
+        final int zahl = 100;
+        // zahl = 120; // Error
+
+
+    }
 
 }
