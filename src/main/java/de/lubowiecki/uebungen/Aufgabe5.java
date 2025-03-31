@@ -19,6 +19,11 @@ public class Aufgabe5 {
         Dozent d2 = new Dozent("Carol", "Danvers");
         Dozent d3 = new Dozent("Scott", "Lang");
 
+        // d1.vorname = "Hans"; // Error: Eigenschaft ist privat
+        d1.setVorname("Hans"); // Schreiben
+        // System.out.println(d1.vorname); // Error: Eigenschaft ist privat
+        System.out.println(d1.getVorname()); // Lesen
+
         d2 = new Dozent("Natasha", "Romanov");
         //d1 = new Dozent("Tony", "Stark"); // Error: d1 ist final
         d1.setVorname("Peter");

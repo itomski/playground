@@ -22,6 +22,8 @@ public class Dozent {
     }
 
     public void setVorname(String vorname) {
+        // this.vorname: Instanzvariable (Eigenschaft des Obejts)
+        // vorname: Prameter, der an die Methode übergeben wird
         this.vorname = vorname;
     }
 
