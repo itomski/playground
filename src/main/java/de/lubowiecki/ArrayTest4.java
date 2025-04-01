@@ -1,6 +1,6 @@
-package de.lubowiecki.uebungen;
+package de.lubowiecki;
 
-public class ArrayTest3 {
+public class ArrayTest4 {
 
     public static void main(String[] args) {
 
