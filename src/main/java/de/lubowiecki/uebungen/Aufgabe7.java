@@ -1,5 +1,7 @@
 package de.lubowiecki.uebungen;
 
+import de.lubowiecki.Farbe;
+
 public class Aufgabe7 {
 
     /*
@@ -49,6 +51,8 @@ public class Aufgabe7 {
         final String STR_TPL = "| %10s | %-10s | %n";
         System.out.printf(STR_TPL, "Peter", "Parker");
         System.out.printf(STR_TPL, "Tony", "Stark");
+
+        System.out.println(Farbe.GRUEN.getRgb());
 
     }
 }

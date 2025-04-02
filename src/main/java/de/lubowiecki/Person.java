@@ -1,5 +1,7 @@
 package de.lubowiecki;
 
+import java.util.Objects;
+
 public class Person {
 
     // Klassenvariable: Alle Objekte und die Klasse teilen sich eine und die gleiche Variable
@@ -57,5 +59,17 @@ public class Person {
     public void setGeburtsJahr(int geburtsJahr) {
         if(geburtsJahr > 1900 && geburtsJahr < 2026)
             this.geburtsJahr = geburtsJahr;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return geburtsJahr == person.geburtsJahr && Objects.equals(vorname, person.vorname) && Objects.equals(nachname, person.nachname);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(vorname, nachname, geburtsJahr);
     }
 }
