@@ -1,3 +1,6 @@
+package de.lubowiecki;
+
+
 public class ForTest {
 
     public static void main(String[] args) {
