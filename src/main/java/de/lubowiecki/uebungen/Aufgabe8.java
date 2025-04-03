@@ -38,5 +38,7 @@ public class Aufgabe8 {
     Beendigung des Programms gehen alle eingegeben Daten verloren.
     */
 
-
+    public static void main(String[] args) {
+        System.out.println("Programm");
+    }
 }
