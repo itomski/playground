@@ -15,5 +15,4 @@ public class Aufgabe9 {
     Siehe: https://falconbyte.net/date-time-api-in-java
      */
 
-
 }

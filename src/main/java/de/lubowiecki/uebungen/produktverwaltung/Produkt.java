@@ -1,17 +1,21 @@
 package de.lubowiecki.uebungen.produktverwaltung;
 
+import java.time.LocalDate;
+
 public class Produkt {
 
     private String name;
     private String beschreibung;
     private int anzahl;
     private double preis;
+    private LocalDate imBestandSeit;
 
     public Produkt(String name, String beschreibung, int anzahl, double preis) {
         this.name = name;
         this.beschreibung = beschreibung;
         this.anzahl = anzahl;
         this.preis = preis;
+        this.imBestandSeit = LocalDate.now();
     }
 
     public String getName() {
@@ -44,5 +48,9 @@ public class Produkt {
 
     public void setPreis(double preis) {
         this.preis = preis;
+    }
+
+    public LocalDate getImBestandSeit() {
+        return imBestandSeit;
     }
 }
