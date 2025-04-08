@@ -10,7 +10,6 @@ public class EingabeMitException {
     public static void main(String[] args) {
 
 
-
         int i = inputInt("alter: ");
 
 //        while(true) {
