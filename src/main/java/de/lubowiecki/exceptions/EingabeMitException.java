@@ -33,19 +33,43 @@ public class EingabeMitException {
         while(true) {
             try {
                 System.out.print(label);
-                int i = scanner.nextInt();
-                if(i < 0)
-                    throw new RuntimeException();
+//                int i = scanner.nextInt();
+//                if(i < 0)
+//                    throw new WertZuNiedrigException();
+//
+//                if(i > 100)
+//                    throw new WertZuHochException();
+//
+//                return i;
 
-                return i;
+                return customNextInt();
             }
             catch(InputMismatchException e) {
                 System.out.println("Falsche Eingabe!");
                 scanner.nextLine(); // Buffer wird geleert
             }
-            catch(RuntimeException e) {
+            catch(WertZuNiedrigException e) {
                 System.out.println("Wert zu niendrig!");
+            }
+            catch(WertZuHochException e) {
+                System.out.println("Wert zu hoch!");
             }
         }
     }
+
+    public static int customNextInt() throws InputMismatchException, WertZuHochException, WertZuNiedrigException  {
+        int i = scanner.nextInt();
+        if(i < 0)
+            throw new WertZuNiedrigException();
+
+        if(i > 100)
+            throw new WertZuHochException();
+
+        return i;
+    }
+
 }
+
+class WertZuHochException extends RuntimeException {}
+
+class WertZuNiedrigException extends RuntimeException {}
