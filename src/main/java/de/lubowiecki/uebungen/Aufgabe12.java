@@ -1,5 +1,7 @@
 package de.lubowiecki.uebungen;
 
+import java.util.Arrays;
+
 public class Aufgabe12 {
 
     /*
